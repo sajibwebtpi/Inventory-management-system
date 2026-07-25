@@ -18,7 +18,7 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Mobile</th>
-                    <th>Action</th>
+                    <th class="text-center">Action</th>
                 </tr>
                 </thead>
                 <tbody id="tableList">
@@ -78,7 +78,5 @@ async function getList() {
     });
 
 }
-
-
 </script>
 

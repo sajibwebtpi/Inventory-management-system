@@ -61,7 +61,8 @@
         } else {
             showLoader();
             try {
-                let res = await axios.post("/user-registration", {
+                let res = await axios.post("/user-registration", 
+                {
                     email: email,
                     firstName: firstName,
                     lastName: lastName,

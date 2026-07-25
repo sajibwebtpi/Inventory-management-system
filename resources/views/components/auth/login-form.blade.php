@@ -5,8 +5,10 @@
                 <div class="card-body">
                     <h4>SIGN IN</h4>
                     <br/>
+                    <label>Email Address</label>
                     <input id="email" placeholder="User Email" class="form-control" type="email"/>
                     <br/>
+                    <label>Password</label>
                     <input id="password" placeholder="User Password" class="form-control" type="password"/>
                     <br/>
                     <button onclick="SubmitLogin()" class="btn w-100 bg-gradient-primary">Next</button>

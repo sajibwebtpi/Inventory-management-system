@@ -34,7 +34,8 @@ class UserController extends Controller
         return view('pages.auth.reset-pass-page');
     }
 
-    function profilePage():View{
+    function profilePage(Request $request): View{
+        // $user = $request->attributes->get('authUser');
         return view('pages.dashboard.profile-page');
     }
 

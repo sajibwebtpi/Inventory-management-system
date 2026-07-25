@@ -1,4 +1,4 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app')
 
 
 @section('content')
@@ -141,6 +141,157 @@
             <div class="mb-5"></div>
             <div class="container">
                 <p class="text-center">All rights reserved © Learn with Rabbil (LWR) 2023-2024</p>
+            </div>
+        </footer>
+
+
+@endsection --}}
+
+
+
+@extends('layouts.app')
+
+
+@section('content')
+
+
+    <nav class="navbar sticky-top shadow-sm navbar-expand-lg navbar-light py-2">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="{{asset('/images/logo.png')}}" alt="" width="96px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header01" aria-controls="header01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="header01">
+                <ul class="navbar-nav ms-auto mt-3 mt-lg-0 mb-3 mb-lg-0 me-4">
+                    <li class="nav-item me-4"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item me-4"><a class="nav-link" href="#clients">Clients</a></li>
+                    <li class="nav-item me-4"><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div><a class="btn mt-3 bg-gradient-primary" href="{{url('/userLogin')}}">Get Started</a></div>
+            </div>
+        </div>
+    </nav>
+
+
+        <section class="pb-5">
+            <div class="container pt-2">
+                <div class="row align-items-center mb-5">
+                    <div class="col-12 col-md-10 col-lg-5 mb-5 mb-lg-0">
+                        <h2 class=" fw-bold mb-3">Run Your Store Smarter with a Complete Inventory &amp; POS Solution</h2>
+                        <p class="lead text-muted mb-4">Track stock in real time, process sales faster, and get clear insights into your business — all from one simple dashboard built for growing businesses.</p>
+                        <div class="d-flex flex-wrap"><a class="btn bg-gradient-primary me-2 mb-2 mb-sm-0" href="{{url('/userLogin')}}">Start Free Trial</a>
+                            <a class="btn bg-gradient-primary mb-2 mb-sm-0" href="{{url('/userLogin')}}">Login</a></div>
+                    </div>
+                    <div class="col-12 col-lg-6 offset-lg-1">
+                        <img class="img-fluid rounded-3 shadow-sm" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80" alt="Retail store owner using inventory management dashboard">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="pb-5" id="clients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8 mx-auto text-center">
+                        <span class="text-muted">Trusted By Business Owners</span>
+                        <p class="lead text-muted">What Our Clients Say About Us</p>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 p-3">
+                        <div class="card px-0 text-center">
+                            <img class="card-img-top mb-3 w-100" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=400&q=80" alt="Danny Bailey">
+                            <h5>Danny Bailey</h5>
+                            <p class="text-muted mb-4">CEO &amp; Founder, Bailey Retail</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 p-3">
+                        <div class="card px-0 text-center">
+                            <img class="card-img-top mb-3 w-100" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=400&q=80" alt="Sarah Whitman">
+                            <h5>Sarah Whitman</h5>
+                            <p class="text-muted mb-4">Store Manager, Whitman Goods</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 p-3">
+                        <div class="card px-0 text-center">
+                            <img class="card-img-top mb-3 w-100" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&h=400&q=80" alt="Michael Chen">
+                            <h5>Michael Chen</h5>
+                            <p class="text-muted mb-4">Owner, Chen Electronics</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 p-3">
+                        <div class="card px-0 text-center">
+                            <img class="card-img-top mb-3 w-100" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&h=400&q=80" alt="Amara Okafor">
+                            <h5>Amara Okafor</h5>
+                            <p class="text-muted mb-4">Founder, Okafor Supermart</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br/>
+
+        <section class="py-5" id="contact">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-5 mb-5 mb-lg-0">
+                        <h2 class="fw-bold mb-5">Have Questions? Let's Talk About Your Business Needs</h2>
+                        <h4 class="fw-bold">Address</h4>
+                        <p class="text-muted mb-5">1686 Geraldine Lane, New York, NY 10013</p>
+                        <h4 class="fw-bold">Contact Us</h4>
+                        <p class="text-muted mb-1">support@yourinventoryapp.com</p>
+                        <p class="text-muted mb-0">+1 (843) 672-4310</p>
+                    </div>
+                    <div class="col-12 col-lg-6 offset-lg-1">
+                        <form action="#">
+                            <input class="form-control mb-3" type="text" placeholder="Name">
+                            <input class="form-control mb-3" type="email" placeholder="E-mail">
+                            <textarea class="form-control mb-3" name="message" cols="30" rows="10" placeholder="Your Message..."></textarea>
+                            <button class="btn bg-gradient-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-5 bg-light">
+            <div class="container text-center pb-5 border-bottom">
+                <a class="d-inline-block mx-auto mb-4" href="#">
+                    <img class="img-fluid"src="{{asset('/images/logo.png')}}" alt="" width="96px">
+                </a>
+                <ul class="d-flex flex-wrap justify-content-center align-items-center list-unstyled mb-4">
+                    <li><a class="link-secondary me-4" href="#">Features</a></li>
+                    <li><a class="link-secondary me-4" href="#clients">Clients</a></li>
+                    <li><a class="link-secondary me-4" href="#pricing">Pricing</a></li>
+                    <li><a class="link-secondary" href="#contact">Contact</a></li>
+                </ul>
+                <div>
+                    <a class="d-inline-block me-4" href="#">
+                        <img src="{{asset('/images/facebook.svg')}}">
+                    </a>
+                    <a class="d-inline-block me-4" href="#">
+                        <img src="{{asset('/images/twitter.svg')}}">
+                    </a>
+                    <a class="d-inline-block me-4" href="#">
+                        <img src="{{asset('/images/github.svg')}}">
+                    </a>
+                    <a class="d-inline-block me-4" href="#">
+                        <img src="{{asset('/images/instagram.svg')}}">
+                    </a>
+                    <a class="d-inline-block" href="#">
+                        <img src="{{asset('/images/linkedin.svg')}}">
+                    </a>
+                </div>
+            </div>
+            <div class="mb-5"></div>
+            <div class="container">
+                <p class="text-center">All rights reserved &copy; {{ date('Y') }} Your Inventory System</p>
             </div>
         </footer>
 
