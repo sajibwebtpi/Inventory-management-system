@@ -209,7 +209,7 @@ class UserController extends Controller
                 // OTP matched, reset OTP and generate token
                 User::where('email', $request->email)->update(['otp' => 0]);
 
-                $token = JWTToken::createTokenForResetPassword($request->email);
+                $token = JWTToken::createTokenForResetPassword($request->email ,$user->user_id);
 
                 return response()->json([
                     'status' => 'success',

@@ -25,13 +25,14 @@ class JWTToken{
 
 
     // Create token for reset password
-    public static function createTokenForResetPassword($user_email){
+    public static function createTokenForResetPassword($user_email ,$user_id){
         $key = env('JWT_KEY');
         $payload = [
             'iss' => 'Laravel Token',
             'iat' =>  time(),
             'exp' => time() + 60 * 5,
-            'user_email' => $user_email
+            'user_email' => $user_email,
+            'user_id' => $user_id
         ];
         return JWT::encode($payload, $key, 'HS256');
     }
