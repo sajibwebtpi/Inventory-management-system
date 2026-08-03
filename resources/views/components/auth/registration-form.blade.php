@@ -92,7 +92,7 @@
                         }
                     }
                 } else {
-                    errorToast("An unexpected error occurred");
+                    errorToast("An unexpected error on registration");
                 }
             }
         }
