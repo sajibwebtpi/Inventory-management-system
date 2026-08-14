@@ -171,6 +171,7 @@ class UserController extends Controller
             ], 200);
 
         } catch (\Throwable $e) {
+            dd($e->getMessage());
             return response()->json([
                 'status' => 'error',
                 'message' => 'Something went wrong',

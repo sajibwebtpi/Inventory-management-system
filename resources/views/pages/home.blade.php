@@ -186,7 +186,7 @@
                             <a class="btn bg-gradient-primary mb-2 mb-sm-0" href="{{url('/userLogin')}}">Login</a></div>
                     </div>
                     <div class="col-12 col-lg-6 offset-lg-1">
-                        <img class="img-fluid rounded-3 shadow-sm" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80" alt="Retail store owner using inventory management dashboard">
+                        <img class="img-fluid rounded-3 shadow-sm" src="{{ asset('/images/cliant1.avif') }}" alt="Retail store owner using inventory management dashboard">
                     </div>
                 </div>
             </div>
@@ -205,28 +205,28 @@
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3 p-3">
                         <div class="card px-0 text-center">
-                            <img class="card-img-top mb-3 w-100" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&h=400&q=80" alt="Danny Bailey">
+                            <img class="card-img-top mb-3 w-100" src="{{ asset('/images/cliant2.avif') }}" alt="Danny Bailey">
                             <h5>Danny Bailey</h5>
                             <p class="text-muted mb-4">CEO &amp; Founder, Bailey Retail</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 p-3">
                         <div class="card px-0 text-center">
-                            <img class="card-img-top mb-3 w-100" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=400&q=80" alt="Sarah Whitman">
+                            <img class="card-img-top mb-3 w-100" src="{{ asset('/images/cliant3.avif') }}" alt="Sarah Whitman">
                             <h5>Sarah Whitman</h5>
                             <p class="text-muted mb-4">Store Manager, Whitman Goods</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 p-3">
                         <div class="card px-0 text-center">
-                            <img class="card-img-top mb-3 w-100" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&h=400&q=80" alt="Michael Chen">
+                            <img class="card-img-top mb-3 w-100" src="{{ asset('/images/cliant4.avif') }}" alt="Michael Chen">
                             <h5>Michael Chen</h5>
                             <p class="text-muted mb-4">Owner, Chen Electronics</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 p-3">
                         <div class="card px-0 text-center">
-                            <img class="card-img-top mb-3 w-100" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&h=400&q=80" alt="Amara Okafor">
+                            <img class="card-img-top mb-3 w-100" src="{{ asset('images/cliant5.avif') }}" alt="Amara Okafor">
                             <h5>Amara Okafor</h5>
                             <p class="text-muted mb-4">Founder, Okafor Supermart</p>
                         </div>
@@ -272,19 +272,19 @@
                     <li><a class="link-secondary" href="#contact">Contact</a></li>
                 </ul>
                 <div>
-                    <a class="d-inline-block me-4" href="#">
+                    <a class="d-inline-block me-4" href="https://www.facebook.com/profile.php?id=100028299583080" target="_blank">
                         <img src="{{asset('/images/facebook.svg')}}">
                     </a>
-                    <a class="d-inline-block me-4" href="#">
+                    <a class="d-inline-block me-4" href="https://x.com/sajibbhuya97416" target="_blank">
                         <img src="{{asset('/images/twitter.svg')}}">
                     </a>
-                    <a class="d-inline-block me-4" href="#">
+                    <a class="d-inline-block me-4" href="https://github.com/sajibwebtpi" target="_blank">
                         <img src="{{asset('/images/github.svg')}}">
                     </a>
-                    <a class="d-inline-block me-4" href="#">
+                    <a class="d-inline-block me-4" href="https://www.instagram.com/sajib_tpi/?hl=en" target="_blank">
                         <img src="{{asset('/images/instagram.svg')}}">
                     </a>
-                    <a class="d-inline-block" href="#">
+                    <a class="d-inline-block" href="https://www.linkedin.com/in/md-sajib-bhuyan/" target="_blank">
                         <img src="{{asset('/images/linkedin.svg')}}">
                     </a>
                 </div>
