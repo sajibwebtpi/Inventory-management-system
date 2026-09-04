@@ -14,7 +14,7 @@
                         <div class="col-4">
                             <img class="w-50" src="{{"images/logo.png"}}">
                             <p class="text-bold mx-0 my-1 text-dark">Invoice  </p>
-                            <p class="text-xs mx-0 my-1">Date: {{ date('Y-m-d') }} </p>
+                            <p class="text-xs mx-0 my-1">Date: {{ date('d-m-Y') }} </p>
                         </div>
                     </div>
                     <hr class="mx-0 my-2 p-0 bg-secondary"/>
@@ -43,7 +43,7 @@
                            <p class="text-bold text-xs my-1 text-dark"> VAT(5%): <i class="bi bi-currency-dollar"></i>  <span id="vat"></span></p>
                            <p class="text-bold text-xs my-1 text-dark"> Discount: <i class="bi bi-currency-dollar"></i>  <span id="discount"></span></p>
                            <span class="text-xxs">Discount(%):</span>
-                           <input onkeydown="return false" value="0" min="0" type="number" step="0.25" onchange="DiscountChange()" class="form-control w-40 " id="discountP"/>
+                           <input onkeydown="return false" value="0" min="0" type="number" step="1" onchange="DiscountChange()" class="form-control w-40 " id="discountP"/>
                            <p>
                               <button onclick="createInvoice()" class="btn  my-3 bg-gradient-primary w-40">Confirm</button>
                            </p>
@@ -129,7 +129,6 @@
 
 
     <script>
-
 
         (async ()=>{
           showLoader();

@@ -151,10 +151,7 @@
 
 @extends('layouts.app')
 
-
 @section('content')
-
-
     <nav class="navbar sticky-top shadow-sm navbar-expand-lg navbar-light py-2">
         <div class="container">
             <a class="navbar-brand" href="#">
