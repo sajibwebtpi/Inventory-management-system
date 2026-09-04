@@ -19,3 +19,5 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 CMD ["/start.sh"]
 
 RUN chmod -R 775 storage bootstrap/cache
+
+RUN chmod +x /var/www/html/scripts/00-laravel-deploy.sh
